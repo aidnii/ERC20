@@ -25,6 +25,6 @@ contract ERC20Token is ERC20 {
     }
 
     function burn(uint256 amount) external {
-        
+        _burn(msg.sender, amount);
     }
 }
